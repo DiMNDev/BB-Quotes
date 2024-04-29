@@ -15,6 +15,7 @@
 		841611D62BE0231C00C80F3C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611D52BE0231C00C80F3C /* Quote.swift */; };
 		841611D82BE0237A00C80F3C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611D72BE0237A00C80F3C /* Character.swift */; };
 		841611DA2BE024E200C80F3C /* FetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611D92BE024E200C80F3C /* FetchController.swift */; };
+		841611DC2BE03A8F00C80F3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611DB2BE03A8F00C80F3C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		841611D52BE0231C00C80F3C /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		841611D72BE0237A00C80F3C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		841611D92BE024E200C80F3C /* FetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchController.swift; sourceTree = "<group>"; };
+		841611DB2BE03A8F00C80F3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				841611D92BE024E200C80F3C /* FetchController.swift */,
 				841611D52BE0231C00C80F3C /* Quote.swift */,
 				841611D72BE0237A00C80F3C /* Character.swift */,
+				841611DB2BE03A8F00C80F3C /* Constants.swift */,
 				841611D32BE003D700C80F3C /* samplecharacter.json */,
 				841611C92BE002A800C80F3C /* Assets.xcassets */,
 				841611CB2BE002A800C80F3C /* Preview Content */,
@@ -155,6 +158,7 @@
 				841611C62BE002A700C80F3C /* BB_QuotesApp.swift in Sources */,
 				841611DA2BE024E200C80F3C /* FetchController.swift in Sources */,
 				841611D82BE0237A00C80F3C /* Character.swift in Sources */,
+				841611DC2BE03A8F00C80F3C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

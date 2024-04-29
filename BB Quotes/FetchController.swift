@@ -17,7 +17,7 @@ struct FetchController {
     func fetchQuote(from show: String) async throws -> Quote {
         let quoteURL = baseURL!.appending(path: "quotes/random")
         var quoteComponents = URLComponents(url: quoteURL, resolvingAgainstBaseURL: true)
-        let quoteQueryItem = URLQueryItem(name: "production", value: show.replacingOccurrences(of: " ", with: "+"))
+        let quoteQueryItem = URLQueryItem(name: "production", value: show.replaceSpaceWithPlus)
         quoteComponents?.queryItems = [quoteQueryItem]
         guard let fetchURL = quoteComponents?.url else {
             throw NetworkError.badURL
@@ -33,4 +33,26 @@ struct FetchController {
         return quote
         
     }
+    
+    func fetchCharacter(_ name: String) async throws -> Character {
+        let characterURL = baseURL!.appending(path: "characters")
+        var characterComponents = URLComponents(url: characterURL, resolvingAgainstBaseURL: true)
+        let characterQueryItem = URLQueryItem(name: "name", value: name.replaceSpaceWithPlus)
+        characterComponents?.queryItems = [characterQueryItem]
+        
+        guard let fetchURL = characterComponents?.url else {
+            throw NetworkError.badURL
+        }
+        let (data, response) = try await URLSession.shared.data(from: fetchURL)
+
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw NetworkError.badResponse
+        }
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        let character = try decoder.decode([Character].self, from: data)
+        
+        return character[0]    }
 }

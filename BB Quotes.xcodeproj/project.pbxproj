@@ -18,6 +18,7 @@
 		841611DC2BE03A8F00C80F3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611DB2BE03A8F00C80F3C /* Constants.swift */; };
 		841611DE2BE0417B00C80F3C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611DD2BE0417B00C80F3C /* ViewModel.swift */; };
 		841611E02BE0450800C80F3C /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841611DF2BE0450800C80F3C /* QuoteView.swift */; };
+		84728B212BE14CBD0012D095 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84728B202BE14CBD0012D095 /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		841611DB2BE03A8F00C80F3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		841611DD2BE0417B00C80F3C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		841611DF2BE0450800C80F3C /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		84728B202BE14CBD0012D095 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				841611C52BE002A700C80F3C /* BB_QuotesApp.swift */,
 				841611C72BE002A700C80F3C /* ContentView.swift */,
 				841611DF2BE0450800C80F3C /* QuoteView.swift */,
+				84728B202BE14CBD0012D095 /* CharacterView.swift */,
 				841611DD2BE0417B00C80F3C /* ViewModel.swift */,
 				841611D92BE024E200C80F3C /* FetchController.swift */,
 				841611D52BE0231C00C80F3C /* Quote.swift */,
@@ -165,6 +168,7 @@
 				841611E02BE0450800C80F3C /* QuoteView.swift in Sources */,
 				841611DA2BE024E200C80F3C /* FetchController.swift in Sources */,
 				841611D82BE0237A00C80F3C /* Character.swift in Sources */,
+				84728B212BE14CBD0012D095 /* CharacterView.swift in Sources */,
 				841611DC2BE03A8F00C80F3C /* Constants.swift in Sources */,
 				841611DE2BE0417B00C80F3C /* ViewModel.swift in Sources */,
 			);
